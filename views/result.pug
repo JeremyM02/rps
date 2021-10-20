@@ -1,0 +1,22 @@
+extends layout
+
+block content
+
+    //p= playerChoice
+    //p= pcChoice
+    //p= winner
+    div.card-container
+        div.card Player Choice
+            img(src= `/images/${playerChoice}-icon.jpg`)
+
+
+        p.versus VS
+
+        div.card PC Choice
+            img(src = `/images/${pcChoice}-icon.jpg`)
+
+
+    h3 Winner: #{winner}
+
+
+    a.retry(href = '/') Play Again

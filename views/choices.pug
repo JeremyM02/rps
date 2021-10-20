@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    //a(href = "/turn?choice=rock") rock
+    //br
+    //a(href = "/turn?choice=paper") paper
+    //br
+    //a(href = "/turn?choice=scissors") scissors
+    //br
+
+    h1 Rock, Paper, Scissors
+    div.card-container
+        a.cord(href = "/turn?choice=rock")
+            img(src = "/images/rock-icon.jpg")
+
+        a.cord(href = "/turn?choice=paper")
+            img(src = "/images/paper-icon.jpg")
+
+        a.cord(href = "/turn?choice=scissors")
+            img(src = "/images/scissors-icon.jpg")
+
+    p.prediction The computer will choose #{pcChoice}.
